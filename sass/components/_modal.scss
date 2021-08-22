@@ -1,0 +1,57 @@
+.backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms $animation;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  & .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 40px;
+
+  min-width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+
+  background-color: $primary-white;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $animation;
+
+  &__close {
+    color: $title-color;
+    background-color: $primary-white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    padding: 5px;
+    margin: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition: color 250ms $animation;
+
+    &:hover,
+    &:focus {
+      color: $acent-color;
+    }
+  }
+}
+.modal__close--icon {
+  display: block;
+  fill: currentColor;
+}

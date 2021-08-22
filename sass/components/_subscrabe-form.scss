@@ -1,0 +1,39 @@
+.subscrabe {
+  display: flex;
+  align-items: flex-end;
+
+  &__label {
+    color: $primary-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__input {
+    color: $primary-white;
+    background-color: $footer-thumb-bgc;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    min-width: 358px;
+
+    margin-top: 20px;
+
+    @include centered();
+
+    padding: 11px 29px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms $animation, color 250ms $animation;
+
+    &:focus {
+      border: 1px solid $title-color;
+      outline: none;
+    }
+  }
+}

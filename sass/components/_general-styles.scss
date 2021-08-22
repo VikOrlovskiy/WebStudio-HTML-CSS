@@ -1,0 +1,51 @@
+body {
+  font-family: $primary-font-family;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding: 94px 0;
+
+  &__title {
+    color: $title-color;
+    line-height: 1.16;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+}
+.section--color {
+  background-color: $secondary-bgc;
+}
+.section-withoutTopPadding {
+  padding-top: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__row {
+  display: flex;
+  align-items: center;
+}
+.is-hidden {
+  @extend %invisible;
+}

@@ -1,0 +1,59 @@
+.product {
+  &:hover .overlay,
+  &:hover .overlay__text {
+    transform: translateY(0);
+  }
+  &__link {
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  &__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__meta {
+    padding: 20px 0 20px 24px;
+    border: 1px solid $portfolio-card-bgc;
+    border-top: 1px solid $primary-white;
+  }
+  &__title {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms $animation;
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $primary-white;
+    padding: 63px 24px;
+    margin: 0;
+
+    transition: color 250ms $animation;
+  }
+}

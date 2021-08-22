@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  flex-basis: calc(100% / 4 -90px);
+
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__thumb {
+    @include centered();
+    height: 120px;
+    width: 270px;
+    background-color: $button-bgc;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}

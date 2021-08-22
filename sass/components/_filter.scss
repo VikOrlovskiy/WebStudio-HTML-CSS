@@ -1,0 +1,14 @@
+.filter {
+  &__list {
+    @include centered();
+  }
+  &__item {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.filter-margin {
+  margin-bottom: 50px;
+}

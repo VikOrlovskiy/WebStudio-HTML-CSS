@@ -1,0 +1,50 @@
+.primary__button {
+  color: $primary-white;
+  background-color: $acent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  @include centered();
+  @extend %button-shadow-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  min-width: 200px;
+  border: 1px solid transparent;
+  transition: color 250ms $animation, background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    background-color: $primary-white;
+  }
+}
+.primary__button--icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.secondary__button {
+  color: $title-color;
+  background-color: $button-bgc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0px solid transparent;
+  transition: color 250ms $animation, background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $primary-white;
+    background-color: $acent-color;
+  }
+}

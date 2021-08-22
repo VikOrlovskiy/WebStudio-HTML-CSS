@@ -1,0 +1,48 @@
+.contacts {
+  &__subscribe {
+    display: block;
+    color: $primary-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+}
+
+.social {
+  @include centered();
+  margin-bottom: 30px;
+  &__item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__link {
+    color: $icon-social-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @include centered();
+
+    transition: background-color 250ms $animation, color 250ms $animation;
+
+    &:focus,
+    &:hover {
+      color: $primary-white;
+      background-color: $acent-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__link-background {
+  color: $primary-white;
+  background-color: $footer-thumb-bgc;
+}

@@ -1,0 +1,30 @@
+.work {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+  }
+  &__link {
+  }
+  &__icon {
+    display: block;
+  }
+  &__text {
+    color: $primary-white;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+
+    position: absolute;
+    margin: 0;
+    padding: 27px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
