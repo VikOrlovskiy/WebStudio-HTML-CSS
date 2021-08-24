@@ -18,15 +18,28 @@
     <header class="page-header">
       <div class="container container__row">
         <a class="logo" href="#"><span class="logo__color">Web</span>Studio</a>
-        <nav class="nav">
+        <button 
+        type="button" 
+        class="button__mobile " 
+        data-menu-button 
+        aria-expanded="false"
+        aria-control="page-header__menu">
+          <svg 
+           width="40px" 
+           height="40px" 
+           aria-label="переключательмобильного меню">
+            <use class="button__mobile-menu"  xlink:href="./images/svg/symbol-defs-good.svg#icon-mobile-menu"></use>
+            <use class="button__mobile-cross" xlink:href="./images/svg/symbol-defs-good.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="page-header__menu " id="page-header__menu" data-menu>
+          <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item ">
               <a class="nav__link" href="index.html">Студия</a>
             </li>
             <li class="nav__item nav__item-active">
-              <a class="nav__link nav__link-active" href="portfolio.html"
-                >Портфолио</a
-              >
+              <a class="nav__link nav__item-active" href="portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Контакты</a>
@@ -45,7 +58,7 @@
             >
           </li>
           <li class="info__item">
-            <a class="info__link" href="tel:+38-096-111-11-11">
+            <a class="info__link info__link-mobile" href="tel:+38-096-111-11-11">
               <svg class="info__icon" width="10px" height="16px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-smartphone"
@@ -55,6 +68,21 @@
             >
           </li>
         </ul>
+         <ul class="additional-social">
+                <li class="additional-social__item">
+                  <a class="additional-social__link" href="#"><span class="additional-social__text">Instagram</span></a>
+                </li>
+                <li class="additional-social__item">
+                  <a class="additional-social__link " href="#"><span class="additional-social__text">Twitter</span></a>
+                </li>
+                <li class="additional-social__item">
+                  <a class=" additional-social__link " href="#"><span class="additional-social__text">Facebook</span></a>
+                </li>
+                <li class="additional-social__item">
+                  <a class="additional-social__link " href="#"><span class="additional-social__text" >LinkedIn</span></a>
+                </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -432,5 +460,6 @@
         </ul>
       </div>
     </footer>
+        <script src="./Js/menu.js"></script>
   </body>
 </html>

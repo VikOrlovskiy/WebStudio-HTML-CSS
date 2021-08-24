@@ -1,7 +1,9 @@
 .subscrabe {
-  display: flex;
-  align-items: flex-end;
-
+  // display: flex;
+  // align-items: flex-end;
+  &__container {
+    margin-bottom: 20px;
+  }
   &__label {
     color: $primary-white;
     font-weight: 700;
@@ -17,7 +19,7 @@
     line-height: 1.87;
     cursor: pointer;
     letter-spacing: 0.06em;
-    min-width: 358px;
+    width: 100%;
 
     margin-top: 20px;
 

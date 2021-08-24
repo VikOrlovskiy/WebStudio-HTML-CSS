@@ -1,0 +1,26 @@
+.additional-social {
+  display: flex;
+  @media (min-width: 480px) {
+  }
+  &__item {
+    padding: 0 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:first-child {
+      padding: 0 10px 0 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding: 0 0 0 10px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__text {
+    color: $acent-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}

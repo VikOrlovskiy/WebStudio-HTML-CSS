@@ -4,15 +4,17 @@
   }
   &__list {
     padding: 60px 0;
-    display: flex;
-    align-items: flex-start;
+    text-align: center;
+    // display: flex;
+    // align-items: flex-start;
   }
   &__item {
+    margin-top: 60px;
     &:nth-child(2n) {
-      margin-left: 70px;
+      // margin-left: 70px;
     }
-    &:last-child {
-      margin-left: auto;
+    &:first-child {
+      margin-top: 0;
     }
   }
 }

@@ -14,7 +14,6 @@
 
 .social {
   @include centered();
-  margin-bottom: 30px;
   &__item {
     margin-right: 10px;
     &:last-child {
@@ -45,4 +44,7 @@
 .social__link-background {
   color: $primary-white;
   background-color: $footer-thumb-bgc;
+}
+.social-mobile {
+  background-color: red;
 }

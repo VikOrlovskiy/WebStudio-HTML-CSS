@@ -1,27 +1,44 @@
 .info {
-  @include centered();
-  margin-left: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto 0 64px 0;
+  // @include centered();
+  // margin-left: auto;
 
   &__item {
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0;
+    margin-top: 32px;
+    &:first-child {
+      margin-top: 0;
     }
+    // margin-right: 30px;
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
   &__icon {
-    fill: $primary-text-color;
-    transition: fill 250ms $animation;
+    display: none;
+    @media (min-width: 768px) {
+      fill: $primary-text-color;
+      transition: fill 250ms $animation;
 
-    margin-right: 10px;
+      // margin-right: 10px;
+    }
   }
   &__link {
     color: $primary-text-color;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    &-mobile {
+      color: $acent-color;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
 
-    @include centered();
+    // @include centered();
     transition: color 250ms $animation;
     &:hover,
     &:focus {

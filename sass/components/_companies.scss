@@ -1,6 +1,21 @@
 .companies {
-  @include centered($content: space-between);
+  display: flex;
+  flex-basis: calc(100% / 2);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -15px;
 
+  @media (min-width: 768px) {
+    width: calc(100% / 3);
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0px;
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
   &__link {
     color: $icon-social-color;
     border-radius: 4px;

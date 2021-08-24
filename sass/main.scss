@@ -4,15 +4,17 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 @import "./components/general-styles";
+@import "./components/_buttons";
 // main
 // header
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/site-contact";
-// hero 2
+// only mobile
+@import "./components/additional-social";
+// hero
 @import "./components/hero-page";
-@import "./components/_buttons";
 // section
 @import "./components/features";
 // section

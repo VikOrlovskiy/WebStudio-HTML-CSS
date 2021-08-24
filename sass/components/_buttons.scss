@@ -48,3 +48,37 @@
     background-color: $acent-color;
   }
 }
+.button__mobile {
+  display: inline-flex;
+  padding: 0;
+  margin: 22px 0;
+  border: none;
+  background-color: $primary-white;
+  z-index: 999;
+
+  & .button__mobile-menu {
+    display: block;
+  }
+  &.is-open .button__mobile-menu {
+    display: none;
+  }
+  & .button__mobile-cross {
+    display: none;
+  }
+  &.is-open .button__mobile-cross {
+    display: block;
+  }
+}
+// .button__mobile-menu {
+//   fill: $title-color;
+//   .button__mobile:hover &,
+//   .button__mobile:focus & {
+//     fill: $acent-color;
+//   }
+// }
+// .button__mobile-cross {
+//   fill: $title-color;
+//   .button__mobile:hover &,
+//   .button__mobile:focus & {
+//     fill: $acent-color;
+// }

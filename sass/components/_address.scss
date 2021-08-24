@@ -1,8 +1,10 @@
-
 .address {
   margin-top: 20px;
   &__item {
     margin-top: 9px;
+    &:first-child {
+      margin-top: 0px;
+    }
   }
   &__location {
     color: $primary-white;
