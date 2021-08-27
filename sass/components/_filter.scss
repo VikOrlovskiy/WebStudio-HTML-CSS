@@ -1,9 +1,16 @@
 .filter {
   &__list {
+    @media (max-width: 767x) {
+      margin-bottom: -15px;
+    }
     @include centered();
+    flex-wrap: wrap;
   }
   &__item {
     margin-right: 8px;
+    @media (max-width: 767x) {
+      margin-bottom: 15px;
+    }
     &:last-child {
       margin-right: 0;
     }

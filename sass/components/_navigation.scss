@@ -1,7 +1,7 @@
 .nav {
   &__list {
     list-style: none;
-    @media (min-width: 480px) {
+    @media (min-width: 767px) {
       display: flex;
       flex-direction: row;
     }
@@ -11,17 +11,17 @@
     cursor: pointer;
     position: relative;
 
-    @media (min-width: 768) {
-      padding: 32px 0;
-      margin-right: 50px;
-    }
-
     @media (max-width: 767px) {
       font-weight: 500;
       font-size: 40px;
       line-height: 1.2;
       letter-spacing: 0.02em;
       padding: 16px 0;
+    }
+
+    @media (min-width: 768px) {
+      padding: 32px 0;
+      margin-right: 50px;
     }
 
     &:hover .nav__link,

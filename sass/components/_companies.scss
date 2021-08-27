@@ -26,7 +26,7 @@
 
     transition: border-color 250ms $animation, color 250ms $animation;
 
-    @include centered($content: space-between);
+    @include centered();
 
     &:focus,
     &:hover {

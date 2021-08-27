@@ -1,8 +1,14 @@
 .subscrabe {
-  // display: flex;
-  // align-items: flex-end;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
   &__container {
-    margin-bottom: 20px;
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
   }
   &__label {
     color: $primary-white;
@@ -19,7 +25,10 @@
     line-height: 1.87;
     cursor: pointer;
     letter-spacing: 0.06em;
-    width: 100%;
+    min-width: 358px;
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
 
     margin-top: 20px;
 
