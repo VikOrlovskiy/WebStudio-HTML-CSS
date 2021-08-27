@@ -2,23 +2,37 @@
   position: relative;
   border-bottom: 2px solid $header-line-color;
   &__menu {
-    display: none;
-    background-color: $primary-white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &.is-open {
-      display: block;
-      padding: 40px 48px;
-      display: flex;
-      flex-direction: column;
-      z-index: 100;
+    @media (min-width: 768px) {
+      flex-grow: 1;
+      justify-content: space-around;
     }
+
     @media (min-width: 1200px) {
-      display: block;
+      justify-content: space-between;
+      margin-left: 93px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+      background-color: $primary-white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 600px;
+    }
+    &.is-open {
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 40px 48px;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+      }
     }
   }
 }

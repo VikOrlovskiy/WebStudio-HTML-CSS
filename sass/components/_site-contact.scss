@@ -1,27 +1,43 @@
 .info {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: auto 0 64px 0;
-  // @include centered();
-  // margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    @include centered();
+    margin-left: auto;
+  }
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 64px 0;
+  }
 
   &__item {
-    margin-top: 32px;
+    @media screen and (max-width: 480px) {
+      margin-top: 32px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      margin-top: 10px;
+    }
     &:first-child {
       margin-top: 0;
     }
-    // margin-right: 30px;
-    // &:last-child {
-    //   margin-right: 0;
-    // }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+    &:last-child {
+      @media screen and (min-width: 1200px) {
+        margin-right: 0;
+      }
+    }
   }
   &__icon {
     display: none;
-    @media (min-width: 768px) {
+    @media screen and (min-width: 480px) {
+      display: flex;
+
       fill: $primary-text-color;
       transition: fill 250ms $animation;
-
-      // margin-right: 10px;
+      margin-right: 10px;
     }
   }
   &__link {
@@ -29,17 +45,20 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    @include centered();
+    transition: color 250ms $animation;
     &-mobile {
-      color: $acent-color;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      text-decoration: none;
+      @media screen and (max-width: 480px) {
+        color: $acent-color;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }
     }
 
-    // @include centered();
-    transition: color 250ms $animation;
     &:hover,
     &:focus {
       color: $acent-color;

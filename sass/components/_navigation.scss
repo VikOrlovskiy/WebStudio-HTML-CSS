@@ -1,24 +1,28 @@
 .nav {
   &__list {
-    // display: flex;
-    // flex-direction: row;
     list-style: none;
+    @media (min-width: 480px) {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__item {
     display: block;
-    @media (max-width: 480px) {
+    cursor: pointer;
+    position: relative;
+
+    @media (min-width: 768) {
+      padding: 32px 0;
+      margin-right: 50px;
+    }
+
+    @media (max-width: 767px) {
       font-weight: 500;
       font-size: 40px;
       line-height: 1.2;
       letter-spacing: 0.02em;
       padding: 16px 0;
     }
-    // padding: 32px 0;
-    cursor: pointer;
-
-    position: relative;
-
-    // margin-right: 50px;
 
     &:hover .nav__link,
     &:focus .nav__link {
@@ -28,7 +32,7 @@
       margin-right: 0;
     }
     &-active::after {
-      @media (min-width: 481px) {
+      @media (min-width: 768px) {
         content: "";
         position: absolute;
         bottom: -2px;
