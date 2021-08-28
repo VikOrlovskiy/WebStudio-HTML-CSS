@@ -19,14 +19,17 @@
   }
   &__item {
     margin-top: 60px;
-    @media (min-width: 768px) {
+    @media (min-width: 480px) {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @media (min-width: 767px) {
       &:nth-child(2n) {
         margin-left: 165px;
         margin-top: 0;
       }
-      &:first-child {
-        margin-top: 0;
-      }
+
       &:last-child {
         flex-grow: 0.5;
       }
