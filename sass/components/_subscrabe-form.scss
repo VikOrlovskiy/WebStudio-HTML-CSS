@@ -25,11 +25,16 @@
     line-height: 1.87;
     cursor: pointer;
     letter-spacing: 0.06em;
-    min-width: 358px;
-    @media (max-width: 1199px) {
-      width: 100%;
-    }
+    width: 100%;
 
+    @media (min-width: 480px) and (max-width: 1199px) {
+      min-width: 450px;
+    }
+    @media (min-width: 1200px) {
+      min-width: 358px;
+      width: auto;
+      margin-right: 12px;
+    }
     margin-top: 20px;
 
     @include centered();

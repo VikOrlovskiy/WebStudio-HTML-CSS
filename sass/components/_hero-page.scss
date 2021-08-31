@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -22,7 +22,7 @@
       ),
       url(../images/hero/hero768-min.jpg);
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 769px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -42,45 +42,75 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 480px),
+  (min-resolution: 192dpi) and (max-width: 480px),
+  (min-resolution: 2dppx) and (max-width: 480px) {
   .hero {
-    background-image: url(../images/hero/hero480@2x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero480@2x-min.jpg);
   }
 }
-@media (min-device-pixel-ratio: 3) and (max-width: 767px),
-  (min-resolution: 288dpi) and (max-width: 767px),
-  (min-resolution: 3dppx) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 3) and (max-width: 480px),
+  (min-resolution: 288dpi) and (max-width: 480px),
+  (min-resolution: 3dppx) and (max-width: 480px) {
   .hero {
-    background-image: url(../images/hero/hero480@3x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero480@3x-min.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 481px),
+  (min-resolution: 192dpi) and (min-width: 481px),
+  (min-resolution: 2dppx) and (min-width: 481px) {
   .hero {
-    background-image: url(../images/hero/hero768@2x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero768@2x-min.jpg);
   }
 }
-@media (min-device-pixel-ratio: 3) and (mmin-width: 768px),
-  (min-resolution: 288dpi) and (min-width: 768px),
-  (min-resolution: 3dppx) and (min-width: 768px) {
+@media (min-device-pixel-ratio: 3) and (min-width: 481px),
+  (min-resolution: 288dpi) and (min-width: 481px),
+  (min-resolution: 3dppx) and (min-width: 481px) {
   .hero {
-    background-image: url(../images/hero/hero768@3x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero768@3x-min.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  (min-resolution: 192dpi) and (min-width: 1200px),
-  (min-resolution: 2dppx) and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 769px),
+  (min-resolution: 192dpi) and (min-width: 769px),
+  (min-resolution: 2dppx) and (min-width: 769px) {
   .hero {
-    background-image: url(../images/hero/hero1200@2x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero1200@2x-min.jpg);
   }
 }
-@media (min-device-pixel-ratio: 3) and (min-width: 1200px),
-  (min-resolution: 288dpi) and (min-width: 1200px),
-  (min-resolution: 3dppx) and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 3) and (min-width: 769px),
+  (min-resolution: 288dpi) and (min-width: 769px),
+  (min-resolution: 3dppx) and (min-width: 769px) {
   .hero {
-    background-image: url(../images/hero/hero1200@3x-min.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero1200@3x-min.jpg);
   }
 }
