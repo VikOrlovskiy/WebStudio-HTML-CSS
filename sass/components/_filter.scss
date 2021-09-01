@@ -1,13 +1,11 @@
 .filter {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 767px) {
-      margin-top: -15px;
-    }
-    @media (min-width: 768px) {
-      @include centered();
-    }
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    margin-top: -15px;
+  }
+  @media (min-width: 768px) {
+    @include centered();
   }
   &__item {
     margin-right: 8px;
